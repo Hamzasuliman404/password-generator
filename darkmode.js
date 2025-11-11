@@ -2,7 +2,6 @@ let darkmode = localStorage.getItem("darkmode") /* This to get current theme fro
 
 const themeSwitch = document.getElementById("theme-switch")
 
-console.log("Heelo")
 
 
 if(darkmode === "active"){
