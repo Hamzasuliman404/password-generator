@@ -1,3 +1,30 @@
+:root{
+    --base-varient:#1F2937;
+    --main-bg-color:#ECFDF5;
+    --primiry-text-color:#2B283A;
+    --secondry-text-color:#10B981;
+    --third-text-color:#6B7280;
+    --output-text-color:#5DEF92;
+    --output-bg-color:#273549;
+    --btn-bg-color:#10B981;
+    --btn-text-color:#ffffff;
+    --outline-bg-color:#D5D4D8;
+}
+
+.darkmode{
+    --base-varient:#ECFDF5;
+    --main-bg-color:#1F2937;
+    --primiry-text-color:#ffffff;
+    --secondry-text-color:#4ADF86;
+    --third-text-color:#E5E7EB;
+    --output-text-color:#55F991;
+    --output-bg-color:#273549;
+    --btn-bg-color:#10B981;
+    --btn-text-color:#ffffff;
+    --outline-bg-color:#2F3E53;;
+    
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -5,7 +32,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1F2937;
+    background-color: var(--main-bg-color);
 }
 
 #container{
@@ -13,7 +40,7 @@ body{
 }
 
 #container h1{
-    color: white;
+    color: var(--primiry-text-color);
     font-family: "Karla";
     font-weight: bolder;
     font-size: 40px;
@@ -21,7 +48,7 @@ body{
 }
 
 #container p:first-of-type{
-    color: #E5E7EB;
+    color: var(--third-text-color);
     font-family: "Karla";
     font-weight: 300;
     font-size: 22px;
@@ -29,8 +56,8 @@ body{
 }
 
 #container #generate-btn{
-    background-color: #10B981;
-    color: white;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
     border: 0;
     padding: 10px 15px;
     border-radius: 5px;
@@ -40,21 +67,54 @@ hr{
     height: 1px;
     width: 450px;
     border: 0;
-    background-color: #2F3E53;
+    background-color: var(--outline-bg-color);
     margin: 35px 0;
+}
+
+
+#theme-switch{
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background-color: var(--base-varient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+
+#theme-switch svg{
+    fill: var(--main-bg-color);
+}
+
+#theme-switch svg:last-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child{
+    display: block;
 }
 /* Utility style */
 
 .random-text{
-    color: #4ADF86;
+    color: var(--secondry-text-color);
 }
 
 .password-field{
 
     display: inline-block;
     width: 210px;
-    background-color: #273549;
-    color: #55F991;
+    background-color: var(--output-bg-color);
+    color: var(--output-text-color);
     font-family: "Inter","monospace";
     border-radius: 5px;
     margin: 0 25px 0 0;
