@@ -3,6 +3,7 @@ let darkmode = localStorage.getItem("darkmode") /* This to get current theme fro
 const themeSwitch = document.getElementById("theme-switch")
 
 
+/** this line of code to check of the darkmode is acrive from preivous localstoarge */
 
 if(darkmode === "active"){
     enableDarkMode()

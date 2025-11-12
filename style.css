@@ -89,7 +89,7 @@ hr{
 
 
 #theme-switch svg{
-    fill: var(--main-bg-color);
+    fill: var();
 }
 
 #theme-switch svg:last-child{

@@ -27,4 +27,24 @@ function generatePassword(){
 }
 
 
+function copyPasswordOne(){
 
+    let text = passEl.textContent;
+
+    // Copy it to the clipboard
+    navigator.clipboard.writeText(text);
+
+    // Tell the user it worked
+    alert("Copied: " + text);
+}
+
+function copyPasswordTwo(){
+
+    let text = passsEl.textContent;
+
+    // Copy it to the clipboard
+    navigator.clipboard.writeText(text);
+
+    // Tell the user it worked
+    alert("Copied: " + text);
+}
