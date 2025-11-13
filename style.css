@@ -27,17 +27,34 @@
 
 body{
     margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 20px;
     background-color: var(--main-bg-color);
 }
 
 #container{
-    width: 500px;
+        width: 500px;
+        margin: 0 auto;
 }
+
+@media (min-width:768px) {
+    #container {
+        width: 750px;
+}
+}
+
+@media (min-width:992px) {
+    #container {
+        width: 970px;
+}
+}
+
+@media (min-width:1200px) {
+    #container {
+        width: 1170px;
+}
+}
+
+
 
 #container h1{
     color: var(--primiry-text-color);
@@ -89,7 +106,7 @@ hr{
 
 
 #theme-switch svg{
-    fill: var();
+    fill: var(--main-bg-color);
 }
 
 #theme-switch svg:last-child{
