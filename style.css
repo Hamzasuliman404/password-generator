@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 :root{
     --base-varient:#1F2937;
     --main-bg-color:#ECFDF5;
@@ -29,6 +33,10 @@ body{
     margin: 0;
     padding: 20px;
     background-color: var(--main-bg-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #container{
@@ -70,7 +78,11 @@ body{
     font-family: "Karla";
     font-weight: 300;
     font-size: 22px;
-    margin:10px 0px 50px 0px;
+    margin:10px 0px 30px 0px;
+}
+
+.setting{
+    margin-bottom: 30px;
 }
 
 #container #generate-btn{
@@ -121,6 +133,15 @@ hr{
 .darkmode #theme-switch svg:last-child{
     display: block;
 }
+
+
+label{
+    color: var(--primiry-text-color);
+    font-family:"Karla";
+    font-weight: bold;
+}
+
+
 /* Utility style */
 
 .random-text{
@@ -130,7 +151,7 @@ hr{
 .password-field{
 
     display: inline-block;
-    width: 210px;
+    min-width: 210px;
     background-color: var(--output-bg-color);
     color: var(--output-text-color);
     font-family: "Inter","monospace";

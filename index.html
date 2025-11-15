@@ -25,6 +25,23 @@
 
             <h1>Generate a <br><span class="random-text">random password</span></h1>
             <p>Never use an insecure password again.</p>
+
+            <div class="setting">
+
+                <input type="number" placeholder="lenght of password" id="lenght" value="8">
+
+                <label for="Symbol">
+                    <input type="checkbox" name="Symbol" id="Symbol">
+                    Symbols
+                </label>
+
+                
+                <label for="Numbers">
+                    <input type="checkbox" name="Numbers" id="Numbers">
+                    Numbers
+                </label>
+            </div>  
+
             <button id="generate-btn" onclick="generatePassword()">Generate passwords</button>
             <hr>
             <p id="password-one" class="password-field" onclick="copyPasswordOne()"></p>
