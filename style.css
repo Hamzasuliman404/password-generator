@@ -33,10 +33,7 @@ body{
     margin: 0;
     padding: 20px;
     background-color: var(--main-bg-color);
-    height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #container{
